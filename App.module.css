@@ -1,0 +1,156 @@
+.mainBox {
+  background: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgHead {
+  background: white;
+  padding: 0 20px;
+  border-bottom: 2px solid #003865;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.title {
+  color: #003865;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+
+.languageDropdown {
+  height: 30px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+
+.searchBar {
+  height: 30px;
+  padding: 4px 10px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+
+.navLinks {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navLinks h4 {
+  margin: 0;
+  cursor: pointer;
+  color: #003865;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.navLinks h4:hover {
+  color: #005b99;
+  text-decoration: underline;
+}
+
+
+.tickerWrapper {
+  width: 100%;
+  background-color: #003865;
+  color: #ffffff;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid hsl(60, 100%, 50%);
+  position: relative;
+}
+
+.tickerLabel {
+  background-color: rgb(255, 255, 0);
+  color: #003865;
+  padding: 0 16px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.tickerScrollArea {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.tickerContent {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .languageDropdown,
+  .searchBar {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,121 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: #f4f3fc;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #cbd3e1;
+  margin-bottom: 12px;
+}
+
+.tab {
+  padding: 10px 16px;
+  background: #e6f0fc;
+  margin-right: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 500;
+  color: #15457b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+
+.tabIcon {
+  font-size: 16px;
+}
+
+
+
+.issueContainer {
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #d9e2f3;
+  border-radius: 0 0 6px 6px;
+}
+
+.issueItem {
+  display: flex;
+  align-items: flex-start;
+  background-color: #eaf4ff;
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  border-left: 5px solid #ffb100;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.issueIcon {
+  color: #ffaa00;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.issueTitle {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+.issueDate {
+  font-size: 0.85rem;
+  color: #6d6d6d;
+  margin-top: 4px;
+}
+
+.viewMoreWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.viewMore {
+  background-color: white;
+  color: #0066cc;
+  border: 1px solid #0066cc;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewMore:hover {
+  background-color: #0066cc;
+  color: white;
+}
+/* Tab hover effect */
+.tab:hover {
+  background: #052a52;
+  color: white;
+}
+
+/* Active tab remains styled */
+.activeTab:hover {
+  background: #0b3c66;
+  color: white;
+}
+
+/* Issue item hover effect */
+.issueItem {
+  transition: all 0.25s ease;
+}
+
+.issueItem:hover {
+  background-color: #97badd;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
