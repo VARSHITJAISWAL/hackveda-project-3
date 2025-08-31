@@ -4,7 +4,7 @@ import ComB from "./ComB.jsx";
 import ComC from "./ComC.jsx";
 import ComD from "./ComD.jsx";
 import ComE from "./ComE.jsx";
-import ComE from "./ComF.jsx";
+import ComF from "./ComF.jsx";
 
 function App() {
   return (
