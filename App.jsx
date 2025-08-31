@@ -4,7 +4,7 @@ import ComB from "./ComB.jsx";
 import ComC from "./ComC.jsx";
 import ComD from "./ComD.jsx";
 import ComE from "./ComE.jsx";
-
+import ComE from "./ComF.jsx";
 
 function App() {
   return (
@@ -63,6 +63,9 @@ function App() {
       </div>
       <div>
         <ComE />
+      </div>
+        <div>
+        <ComF />
       </div>
 
     </div>
